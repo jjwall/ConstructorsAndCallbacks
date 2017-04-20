@@ -106,6 +106,7 @@ var createClozeCard = function() {
 			}
 		}
 		fs.appendFileSync("./flashCards.txt", answers.cloze + " || " + blankText + "\n");
+		blankText = "";
 		runProgram();
 	});
 }
